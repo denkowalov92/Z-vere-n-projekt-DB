@@ -23,7 +23,7 @@ use schema chipmunk_lab11;
 SELECT fuel_type, COUNT(*) as count 
 FROM DIM_STATION_INFO 
 GROUP BY fuel_type;
-```
+
 
 -- Graf 3 Operátori podľa typu paliva:
 
@@ -84,3 +84,4 @@ FROM FACT_TRANSPORT_INFRASTRUCTURE f
 JOIN DIM_STATE s ON f.idDIM_STATE = s.idDIM_STATE
 WHERE f.lane_count IS NOT NULL
 GROUP BY s.state_code, f.lane_count;
+
